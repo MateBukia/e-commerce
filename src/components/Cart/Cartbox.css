@@ -1,0 +1,214 @@
+.cart {
+    border: 1px solid #ccc;
+    padding: 2em;
+    margin: 70px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: white;
+    z-index: 1000;
+    border-radius: 8px;
+  }
+  .cart .cart-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cart .cart-header h2 {
+    margin-bottom: 10px;
+    color: #000;
+    font-family: Manrope-700;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.286px;
+    text-transform: uppercase;
+  }
+  .cart .cart-header h4{
+    color: #D87D4A;
+    font-family: Manrope-400;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 166.667% */
+    text-decoration-line: underline;
+    cursor: pointer;
+  }
+  @font-face {
+    font-family: Manrope-400;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../../../public/Manrope-Medium.ttf);
+}
+
+@font-face {
+    font-family: Manrope-700;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    src: url(../../../public/Manrope-Bold.ttf);
+}
+  .cart ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .product-name-price h4{
+    color: #000;
+  font-family: Manrope-700;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 166.667% */
+  }
+  .cart li {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .product-quantity{
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    height: 32px;
+    width: 96px;
+  }
+  .product-quantity button{
+    cursor: pointer;
+    border: none;
+    color: #000;
+    text-align: center;
+    font-family: Manrope-700;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.25;
+  }
+  .product-quantity span{
+    color: #000;
+    text-align: center;
+    font-family: Manrope-700;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  #remove{
+    width: 54px;
+    height: 32px;
+    cursor: pointer;
+  }
+  .product-name-price{
+    display: flex;
+    flex-direction: column;
+  }
+  .cart li img{
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+  }
+  .cart-total {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .cart-total h5{
+    color: #000;
+    text-align: center;
+    font-family: Manrope-700;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .cart-total h4{
+    color: #000;
+  font-family: Manrope-400;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+  opacity: 0.5;
+  }
+  .continue-checkout button {
+    margin-left: 10px;
+    border: none;
+    background: #D87D4A;
+    color: white;
+  }
+  .continue-checkout{
+    background-color: #D87D4A;
+    padding: 1em;
+    display: flex;
+    margin-top: 24px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .continue-checkout:hover{
+    background-color: #FBAF85;
+  }
+  .continue-checkout:hover button {
+    background-color: #FBAF85;
+  }
+  @media (max-width: 500px) {
+    .cart {
+      left: 45%;
+      transform: translateX(-65%);
+      right: initial;
+      margin: 70px;
+      top: 10px;
+    }
+  
+    .cart li {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .cart .cart-header h2 {
+      font-size: 16px;
+    }
+  
+    .cart .cart-header h4 {
+      font-size: 14px;
+    }
+  
+    .product-quantity {
+      width: auto;
+    }
+  
+    .product-quantity span,
+    .product-quantity button {
+      font-size: 12px;
+    }
+  
+    .product-name-price h4 {
+      font-size: 14px;
+    }
+  
+    .cart-total h5 {
+      font-size: 16px;
+    }
+  
+    .cart-total h4 {
+      font-size: 14px;
+    }
+  
+    .continue-checkout button {
+      font-size: 14px;
+    }
+  }

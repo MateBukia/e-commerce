@@ -1,0 +1,76 @@
+.zx7-speaker{
+    display: flex;
+    width: 90%;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+
+}
+.zx7-speaker .zx7speakerimage{
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+}
+.zx7-speaker .title{
+    position: absolute;
+    left: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1em;
+}
+@font-face{
+    font-family: Manrope-700;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    src:url(../../../public/Manrope-Bold.ttf);
+}
+.zx7-speaker .title h1{
+    color: #000;
+    font-family: Manrope-700;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.zx7-speaker .zx7speakertablet{
+    display: none;
+}
+.zx7-speaker .zx7speakermobile{
+    display: none;
+}
+@media (max-width:880px){
+    .zx7-speaker .zx7speakerimage{
+        display: none;
+    }
+    .zx7-speaker .zx7speakermobile{
+        display: none;
+    }
+    .zx7-speaker .title{
+        left: 2em;
+    }
+    .zx7-speaker .zx7speakertablet{
+        width: 100%;
+        position: relative;
+        border-radius: 8px;
+        display: inline;
+    }
+}
+@media (max-width:580px){
+    .zx7-speaker .title{
+        left: 2em;
+    }
+    .zx7-speaker .zx7speakerimage,.zx7-speaker .zx7speakertablet{
+        display: none;
+    }
+    .zx7-speaker .zx7speakermobile{
+        width: 100%;
+        position: relative;
+        border-radius: 8px;
+        display: inline;
+    }
+}

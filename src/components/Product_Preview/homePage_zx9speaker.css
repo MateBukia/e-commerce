@@ -1,0 +1,123 @@
+.zx9speaker-container{
+    display: flex;
+    width: 90%;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    border-radius: 8px;
+    background: #D87D4A;
+}
+.zx9speaker-container .oval{
+    position: absolute;
+    bottom: -42em;
+    left: -10em;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+.zx9speaker-container .zx9speaker-description{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5em;
+}
+.zx9speaker-container .zx9speaker-description .speaker-image{
+    display: flex;
+    align-items: end;
+    width: 37%;
+}
+.zx9speaker-container .zx9speaker-description .text h1{
+    width: 2em;
+    color: #FFF;
+    font-family: Manrope-700;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px; /* 103.571% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.zx9speaker-container .zx9speaker-description .text h3{
+    color: #FFF;
+    width: 21em;
+    font-family: Manrope-400;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 166.667% */
+    opacity: 0.75;
+}
+.zx9speaker-container .zx9speaker-description{
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 1em;
+}
+.zx9speaker-container .zx9speaker-description .text{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    align-items: start;
+}
+@font-face{
+    font-family: Manrope-700;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    src:url(../../../public/Manrope-Bold.ttf);
+}
+@font-face{
+    font-family: Manrope-400;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    src:url(../../../public/Manrope-Regular.ttf);
+}
+@media (max-width:720px){
+    .zx9speaker-container .zx9speaker-description{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 3em;
+    }
+    .zx9speaker-container .oval{
+        bottom: 6em;
+        left: 0;
+    }
+    .zx9speaker-container .zx9speaker-description .text{
+        text-align: center;
+        align-items: center;
+    }
+    .zx9speaker-container .zx9speaker-description .text h1{
+        width: 6em;
+    }
+}
+@media (max-width:380px){
+    .zx9speaker-container .oval{
+        bottom: 15em;
+        left: 0;
+    }
+    .zx9speaker-container .zx9speaker-description .text h1{
+        width: 5em;
+        color: #FFF;
+        text-align: center;
+        font-family: Manrope-700;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 111.111% */
+        letter-spacing: 1.286px;
+        text-transform: uppercase;
+    }
+    .zx9speaker-container .zx9speaker-description .text h3{
+        color: #FFF;
+        text-align: center;
+        font-family: Manrope;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; /* 166.667% */
+    }  
+}

@@ -1,0 +1,215 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  @font-face {
+    font-family: Manrope-400;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../../../public/Manrope-Medium.ttf);
+}
+
+@font-face {
+    font-family: Manrope-700;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    src: url(../../../public/Manrope-Bold.ttf);
+}
+  .modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .modal .modal-products{
+    display: flex;
+    flex-direction: row;
+  }
+  .modal .modal-products ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px 0px 0px 8px;
+    background: #F1F1F1;
+  }
+  .modal h1{
+    color: #000;
+    font-family: Manrope-700;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 112.5% */
+    letter-spacing: 1.143px;
+    text-transform: uppercase;
+  }
+  .modal h6{
+    color: #000;
+    font-family: Manrope-400;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 166.667% */
+    opacity: 0.5;
+  }
+  .modal li {
+    display: flex;
+    width: 198px;
+    padding-top: 24px;
+    padding-bottom: 1px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 12px;
+  }
+  .modal-product-detail{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .modal-product-detail div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    justify-content: space-between;
+  }
+  .modal img {
+    width: 28px;
+    height: 32px;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+  
+  .modal .modal-totals {
+    margin-top: 20px;
+  }
+  .line{
+    margin-left: 24px;
+    margin-right: 24px;
+    height: 1px;
+    opacity: 0.08;
+    background: #000;
+  }
+  .toggle-button {
+    color: #000;
+    font-family: Manrope-700;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+    opacity: 0.5;
+    letter-spacing: -0.214px;
+  }
+  .modal-product-detail h4{
+    color: #000;
+    font-family: Manrope-700;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px; /* 178.571% */
+    opacity: 0.5;
+  }
+  .modal-product-detail p{
+    color: #000;
+    font-family: Manrope-700;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px; /* 166.667% */
+  }
+  .back-to-home{
+    border: none;
+    background: #D87D4A;
+    height: 48px;
+    color: white;
+    text-transform: uppercase;
+  }
+  .modal-grand-total{
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 198px;
+    border-radius: 0px 8px 8px 0px;
+  }
+  .modal-grand-total span{
+    color: #FFF;
+    font-family: Manrope-400;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 166.667% */
+    opacity: 0.5;
+  }
+  .modal-grand-total p{
+    color: #FFF;
+    text-align: right;
+    font-family: Manrope-700;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  @media (max-width: 1024px){
+    .checkout .checkout-page{
+      flex-direction: column;
+      padding: 0 1em;
+    }
+    .checkout{
+      padding: 0;
+    }
+    .checkout .checkout-page .summary {
+      width: 100%;
+    }
+    .checkout .checkout-page .checkout-form  {
+      width: 100%;
+    }
+  }
+  @media (max-width: 520px){
+    .checkout .checkout-page{
+      flex-direction: column;
+      padding: 0 1em;
+    }
+    .checkout{
+      padding: 0;
+    }
+    .checkout .checkout-page .summary {
+      width: 100%;
+    }
+    .checkout .checkout-page .checkout-form  {
+      width: 100%;
+    }
+    .input-container, .shipping-container, .payment-details-inner, .e-money{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .radio-inputs-container, .e-money .input-wrapper{
+      width: 100%;
+    }
+    .modal{
+      margin-top: 61px;
+    }
+  }

@@ -1,0 +1,17 @@
+.Default-Button1 {
+    letter-spacing: 1px;
+    background-color: #D87D4A;
+    color: white; 
+    border: 2px solid #D87D4A;
+    padding: 15px 30px; 
+    font-size: 13px; 
+    font-weight: 700; 
+    text-align: center; 
+    text-transform: uppercase; 
+    cursor: pointer;
+    outline: none; 
+}
+.Default-Button1:hover{
+    cursor: pointer;
+    background-color: #FBAF85;
+}

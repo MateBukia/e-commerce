@@ -1,0 +1,98 @@
+.product-list {
+    padding-top: 5em;
+    padding-bottom: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+  }
+  
+  .product-list .product-item {
+    width: 14em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    border-radius: 8px;
+    background: #F1F1F1;
+  }
+
+  .product-list .product-item .product-image {
+    width: 9em;
+    height: auto;
+    margin-bottom: 1em;
+  }
+  .shop-link {
+    gap: 0.8em;
+    display: flex;
+    color: #000;
+    text-align: center;
+    font-family: Manrope-700;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 0.5;
+  }
+  
+  .shop-link .arrow {
+    width: 5px;
+    height: 10px;
+    flex-shrink: 0; 
+    stroke-width: 2px;
+    padding-bottom: 1em;
+  }
+  
+  .shop-link:hover {
+    cursor: pointer;
+    color:#D87D4A;
+  }
+  @font-face{
+    font-family: Manrope-700;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    src:url(../../../public/Manrope-Bold.ttf);
+}
+.product-item h3{
+  padding-top: 4em;
+  color: #000;
+  text-align: center;
+  font-family: Manrope-700;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.286px;
+  text-transform: uppercase;
+}  
+.product-list .image-wrapper{
+  position: absolute;
+  top: -3em;
+  left: 7em;
+  transform: translateX(-50%);
+}
+@media(max-width:835px){
+  .product-list{
+    gap: 2em;
+  }
+  .product-list .image-wrapper{
+    left: 5em;
+  }
+  .product-list .product-item{
+    width: 10em;
+  }
+  @media(max-width:560px){
+    .product-list{
+      flex-direction: column;
+      gap: 4em;
+    }
+  }
+}
+
+
+  

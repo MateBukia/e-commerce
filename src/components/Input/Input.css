@@ -1,0 +1,98 @@
+.input-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 9px;
+  
+    position: relative;
+    padding-top: 20px;
+  }
+  
+  .input {
+    border-radius: 8px;
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    padding: 18px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+  }
+  
+  .lable {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+  
+    top: 0px;
+    left: 0px;
+  }
+  
+  .input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 400;
+  }
+  
+  .input:focus {
+    border: 1px solid #D87D4A;
+    outline: none;
+  }
+  
+  .label-error {
+    color: #CD2C2C;
+  }
+  
+  .input-error {
+    border: 2px solid #CD2C2C !important;
+  }
+  
+  .input-error-p {
+    position: absolute;
+    right: 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: calc(100% - 100px);
+    white-space: nowrap;
+    text-align: end;
+  }
+  
+  .input-error-p abbr {
+    text-decoration: none;
+  }
+  
+  /* Readio Input */
+  .radio-input-wrapper {
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+    padding: 18px 24px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .radio-input-wrapper input {
+    accent-color:  #D87D4A;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .radio-input-wrapper:has(input[type="radio"]:checked) {
+    border-color: #D87D4A;
+  }
+  
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }

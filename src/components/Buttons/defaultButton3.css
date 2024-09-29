@@ -1,0 +1,19 @@
+.Default-Button3 {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color:black
+}
+.arrow{
+    width: 5px;
+    height: 10px;
+    stroke-width: 2px;
+    stroke: #D87D4A;
+}
+.Default-Button3:hover{
+    cursor: pointer;
+    color: #D87D4A;
+}

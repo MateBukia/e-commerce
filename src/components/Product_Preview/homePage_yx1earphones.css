@@ -1,0 +1,80 @@
+.yx1_earphones{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+}
+.yx1_earphones .earphones-picture .yx1earphoneimage{
+    border-radius: 8px;
+    width: 95%;
+}
+.yx1_earphones .earphones-picture .yx1earphonestablet, .yx1_earphones .earphones-picture .yx1earphonesmobile{
+    display: none;
+}
+.yx1_earphones .earphones-picture{
+    width: 65%;
+}
+@font-face{
+    font-family: Manrope-700;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    src:url(../../../public/Manrope-Bold.ttf);
+}
+.yx1_earphones .description {
+    border-radius: 8px;
+    width: 43%;
+    background: #F1F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.yx1_earphones .description h1{
+    color: #000;
+font-family: Manrope-700;
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+@media(max-width:790px){
+    .yx1_earphones .earphones-picture .yx1earphoneimage,.yx1_earphones .earphones-picture .yx1earphonesmobile{
+        display: none;
+    }
+    .yx1_earphones .earphones-picture .yx1earphonestablet{
+        border-radius: 8px;
+        width: 95%;
+        display: inline;
+    }
+    .yx1_earphones .description{
+        width: 60%;
+    }
+}
+@media(max-width:590px){
+    .yx1_earphones .earphones-picture .yx1earphoneimage,.yx1_earphones .earphones-picture .yx1earphonestablet{
+        display: none;
+    }
+    .yx1_earphones .earphones-picture .yx1earphonesmobile{
+        border-radius: 8px;
+        width: 100%;
+        display: inline;
+    }
+    .yx1_earphones{
+        flex-direction: column;
+        gap: 1em;
+    }
+    .yx1_earphones .description{
+        width: 100%;
+        height: 15em;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .yx1_earphones .earphones-picture{
+        width: 100%;
+    }
+}

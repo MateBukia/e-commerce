@@ -2,6 +2,8 @@ import { useNavigate } from 'react-router-dom';
 import { useCart } from '../../Context/CartContext';
 import './Cartbox.css';
 
+
+
 const Cart = () => {
   const { cart, removeFromCart, clearCart, incrementQuantity, decrementQuantity } = useCart();
   const navigate = useNavigate();

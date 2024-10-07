@@ -7,6 +7,9 @@ interface HeaderProps {
 }
 
 const Header = ({ onBurgerClick, onSVGclick }: HeaderProps) => {
+
+
+
   return (
     <header>
       <div className="header-container">

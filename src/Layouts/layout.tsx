@@ -1,4 +1,4 @@
-import React, { useState, createContext, useContext, useEffect, useRef } from 'react';
+import { useState, createContext, useContext, useEffect, useRef } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Header from "../pages/Header_Footer/header";
 import Footer from "../pages/Header_Footer/footer";
@@ -31,38 +31,43 @@ const Layoutform = () => {
   };
 
   const toggleCartVisibility = () => {
-    if(!isCartVisible){
-     setCartVisible(!isCartVisible);
-     setIsMenuOpen(false);
-    }
-    else{
-     setCartVisible(false);
-     console.log(isCartVisible);
-     setIsMenuOpen(false);
-    }
+    if(!isCartVisible || isCartVisible===true ){
+      setCartVisible(!isCartVisible);
+      setIsMenuOpen(false);
+     }
+     else{
+      setIsMenuOpen(false);
+      setCartVisible(false);
+     }
    };
 
   useEffect(() => {
     setCartVisible(false);
+    setIsMenuOpen(false);
   }, [location]);
 
-  // useEffect(() => {
-  //   const handleClickOutside = (event: MouseEvent) => {
-  //     if (cartRef.current && !cartRef.current.contains(event.target as Node)) {
-  //       setCartVisible(false);
-  //     }
-  //   };
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const cartIcon = document.querySelector('.cart-icon');
+      if (
+        cartRef.current && 
+        !cartRef.current.contains(event.target as Node) &&
+        cartIcon && !cartIcon.contains(event.target as Node)
+      ) {
+        setCartVisible(false);
+      }
+    };
 
-  //   if (isCartVisible) {
-  //     document.addEventListener('mousedown', handleClickOutside);
-  //   } else {
-  //     document.removeEventListener('mousedown', handleClickOutside);
-  //   }
+    if (isCartVisible) {
+      document.addEventListener('mousedown',  handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
 
-  //   return () => {
-  //     document.removeEventListener('mousedown', handleClickOutside);
-  //   };
-  // }, [isCartVisible]);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isCartVisible]);
 
   return (
     <LayoutContext.Provider value={{ isMenuOpen, isCartVisible, handleBurgerClick, toggleCartVisibility }}>

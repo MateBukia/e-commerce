@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import './productCategory_page.css';
 import data from '../../data/data.json';
 import { useParams, useNavigate } from 'react-router-dom';
@@ -34,7 +34,7 @@ const ProductPage = () => {
     <div className='product' key={product.id}>
       {index % 2 === 0 ? (
         <>
-          <img src={`../.${product.image.desktop}`} alt={product.name} />
+          <img src={`${import.meta.env.BASE_URL}${product.image.desktop}`} alt={product.name} />
           <div className='description'>
             {product.new && <span>NEW PRODUCT</span>}
             <h2>{product.name}</h2>
@@ -49,7 +49,7 @@ const ProductPage = () => {
             <p>{product.description}</p>
             <DefaultButton1 onClick={() => handleButtonClick(product.id, product.category)} />
           </div>
-          <img src={`../.${product.image.desktop}`} alt={product.name} />
+          <img src={`${import.meta.env.BASE_URL}${product.image.desktop}`} alt={product.name} />
         </>
       )}
     </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Modal.css';
 import { CartItem } from './Checkout';
 
@@ -10,7 +10,7 @@ interface ModalProps {
   grandTotal: number;
 }
 
-const Modal = ({ show, handleClose, cart, totalPrice, grandTotal }: ModalProps) => {
+const Modal = ({ show, handleClose, cart, totalPrice}: ModalProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   if (!show) {

@@ -9,7 +9,7 @@ import Zx7speaker from '../../components/Product_Preview/homePage_zx7speaker';
 import Yx1earphones from '../../components/Product_Preview/homePage_yx1earphones';
 import Advertisement from '../../components/Product_Preview/homePage_advertisement';
 import { useLayoutContext } from '../../Layouts/layout';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 const HomePage = () => {

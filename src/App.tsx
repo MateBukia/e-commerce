@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import HomePage from './pages/Home/homePage';
 import ProductPage from './pages/product/productCategory_page';
@@ -20,14 +20,13 @@ const ScrollToTopWrapper: React.FC<ScrollToTopWrapperProps> = ({ children }) => 
 };
 
 const App = () => {
-
   return (
     <Router basename="/e-commerce/">
-      <CartProvider> 
+      <CartProvider>
         <ScrollToTopWrapper>
           <div className="App">
             <Routes>
-              <Route path="*" element={<ErrorPage/>} />
+              <Route path="*" element={<ErrorPage />} />
               <Route element={<Layoutform />}>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/products/:productName" element={<ProductPage />} />

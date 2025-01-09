@@ -7,7 +7,7 @@ const products = [
   {
     image: ImageHeadphones,
     title: "HEADPHONES",
-    link: "/e-commerce/products/headphones"
+    link: `${import.meta.env.BASE_URL}/products/headphones`
   },
   {
     image: ImageSpeakers,

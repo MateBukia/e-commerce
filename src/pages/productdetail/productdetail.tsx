@@ -42,7 +42,7 @@ const ProductDetail = () => {
   const handleButtonClick = (slug: string) => {
     const otherProduct = productData.find(p => p.slug === slug);
     if (otherProduct) {
-      navigate(`${import.meta.env.BASE_URL}/products/${otherProduct.category}/${otherProduct.id}`);
+      navigate(`/products/${otherProduct.category}/${otherProduct.id}`);
     }
   };
 

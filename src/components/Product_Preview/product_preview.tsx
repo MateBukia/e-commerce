@@ -7,17 +7,17 @@ const products = [
   {
     image: ImageHeadphones,
     title: "HEADPHONES",
-    link: `${import.meta.env.BASE_URL}products/headphones`
+    link: `/e-commerce/products/headphones`
   },
   {
     image: ImageSpeakers,
     title: "SPEAKERS",
-    link: `${import.meta.env.BASE_URL}products/speakers`
+    link: `/e-commerce/products/speakers`
   },
   {
     image: ImageEarphones,
     title: "EARPHONES",
-    link: `${import.meta.env.BASE_URL}products/earphones`
+    link: `/e-commerce/products/earphones`
   }
 ];
 

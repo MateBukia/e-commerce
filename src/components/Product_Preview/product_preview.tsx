@@ -17,7 +17,7 @@ const products = [
   {
     image: ImageEarphones,
     title: "EARPHONES",
-    link: "/e-commerce/products/earphons"
+    link: "/e-commerce/products/earphones"
   }
 ];
 

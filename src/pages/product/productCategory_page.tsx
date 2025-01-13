@@ -34,7 +34,7 @@ const ProductPage = () => {
     <div className='product' key={product.id}>
       {index % 2 === 0 ? (
         <>
-          <img src={`${import.meta.env.BASE_URL}${product.image.desktop}`} alt={product.name} />
+          <img src={`/e-commerce/${product.image.desktop}`} alt={product.name} />
           <div className='description'>
             {product.new && <span>NEW PRODUCT</span>}
             <h2>{product.name}</h2>
@@ -49,7 +49,7 @@ const ProductPage = () => {
             <p>{product.description}</p>
             <DefaultButton1 onClick={() => handleButtonClick(product.id, product.category)} />
           </div>
-          <img src={`${import.meta.env.BASE_URL}${product.image.desktop}`} alt={product.name} />
+          <img src={`/e-commerce/${product.image.desktop}`} alt={product.name} />
         </>
       )}
     </div>

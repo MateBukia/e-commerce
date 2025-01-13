@@ -3,6 +3,7 @@ import ImageHeadphones from '../../assets/shared/desktop/image-category-thumbnai
 import ImageSpeakers from '../../assets/shared/desktop/image-category-thumbnail-speakers.png'
 import ImageEarphones from '../../assets/shared/desktop/image-category-thumbnail-earphones.png'
 import ArrowImage from '../../assets/shared/desktop/arrow.png'
+import { Link } from 'react-router-dom'
 const products = [
   {
     image: ImageHeadphones,
@@ -30,12 +31,12 @@ const ProductPreview = () => {
                 <img src={item.image} alt={item.title} className="product-image" />
             </div>
             <h3>{item.title}</h3>
-            <a href={item.link} className="shop-link">
+            <Link to={item.link} className="shop-link">
                  SHOP 
                 <span className="arrow">
                   <img src={ArrowImage} alt="arrowimage" />
                 </span>
-            </a>
+            </Link>
         </div>
       ))}
     </div>
